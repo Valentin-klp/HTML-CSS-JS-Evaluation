@@ -1,3 +1,4 @@
+/* --- Style général --- */
 body {
     background-color: yellow;
     color: black;
@@ -12,6 +13,7 @@ body {
     flex-direction: column;
 }
 
+/* --- Conteneur principal --- */
 .container {
     width: 80%;
     max-width: 900px;
@@ -20,6 +22,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* --- Header --- */
 header {
     background-color: black;
     color: white;
@@ -27,6 +30,7 @@ header {
     font-size: 1.5em;
 }
 
+/* --- Barre de navigation --- */
 nav {
     background-color: grey;
     padding: 10px;
@@ -49,6 +53,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* --- Contenu principal --- */
 main {
     background-color: lightgrey;
     padding: 20px;
@@ -59,11 +64,13 @@ h2 {
     font-weight: bold;
 }
 
+/* --- Pied de page --- */
 footer {
     background-color: black;
     padding: 15px;
 }
 
+/* --- Bouton principal (redirection vers l’image) --- */
 button {
     background: black;
     color: white;
@@ -71,4 +78,47 @@ button {
     padding: 10px 20px;
     font-size: 1.2em;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
+
+button:hover {
+    background: grey;
+}
+
+/* --- PAGE IMAGE (page1.html) --- */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 200%;
+    max-height: 200%;
+    object-fit: contain; /* Permet d'afficher toute l’image sans la couper */
+    border: 5px solid white;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* --- Bouton retour sur page image --- */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: grey;
+}
+
